@@ -10,6 +10,18 @@ namespace name_sorter
     {
         static void Main(string[] args)
         {
+            string fileLocation = args[0];
+            /* Create a list and read the document*/
+            List<string> listOfNamesFromDocument = ReadandWriteFile.ReadFile(fileLocation);
+            /* Run the Bubble sorting algroithm */
+            List<string> sortedList = SortAlgorithm.SortList(listOfNamesFromDocument);
+         
+            /*Console.WriteLine("Sorted List:");*/
+            WriteToConsole.PrintList(sortedList);
+            ReadandWriteFile.WriteFile(sortedList, ".\\stored-names-list.txt");
+            Console.ReadKey();
         }
+
+        
     }
 }
