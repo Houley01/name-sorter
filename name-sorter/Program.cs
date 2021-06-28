@@ -24,6 +24,7 @@ namespace name_sorter
             Console.WriteLine("Sorted List:");
             WriteToConsole.PrintList(sortedList);
             ReadandWriteFile.WriteFile(sortedList, ".\\stored-names-list.txt");
+            Console.WriteLine("Press any key to end Name Sorter");
             Console.ReadKey();
         }
 

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "name-sorter", "name-sorter\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1FFB0A7-302C-4663-A2B0-DA215F1B235B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "name-sorterTests", "name-sorterTests\name-sorterTests.csproj", "{16ABA47A-FA7A-4E8B-A5E3-7BA76E04722D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{B4419D6D-8E3E-472B-B0D5-AC46D3A4BF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4419D6D-8E3E-472B-B0D5-AC46D3A4BF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4419D6D-8E3E-472B-B0D5-AC46D3A4BF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16ABA47A-FA7A-4E8B-A5E3-7BA76E04722D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16ABA47A-FA7A-4E8B-A5E3-7BA76E04722D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16ABA47A-FA7A-4E8B-A5E3-7BA76E04722D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16ABA47A-FA7A-4E8B-A5E3-7BA76E04722D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

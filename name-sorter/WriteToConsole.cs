@@ -14,7 +14,7 @@ namespace name_sorter
             {
                 Console.WriteLine(listItem);
             }
-            Console.WriteLine("\n\n");
+            Console.WriteLine("\n");
         }
     }
 }
