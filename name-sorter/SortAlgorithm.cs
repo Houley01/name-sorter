@@ -37,10 +37,23 @@ namespace name_sorter
 
          public static int CompareNames(string name1, string name2) {
             // Split the full name up before compairing the last name
-            String[] splitName1 = name1.Split(' '); 
-            String[] splitName2 = name2.Split(' ');
+            string[] splitName1 = name1.Split(' '); 
+            string[] splitName2 = name2.Split(' ');
             // Find the sizeOf the array, minus 1 to the get the last name
-            return String.Compare(splitName1[splitName1.Length-1], splitName2[splitName2.Length-1]);
+            int compareValue =  string.Compare(splitName1[splitName1.Length - 1].ToLower(), splitName2[splitName2.Length - 1].ToLower());
+            
+            // if compareValue is equal to 0 than compare any given name
+            if (compareValue == 0) {
+                // Remove the last name from the array
+                splitName1[splitName1.Length - 1] = null;
+                splitName2[splitName2.Length - 1] = null;
+                // Join all the given names together and make them lowercase
+                name1 = string.Concat(splitName1).ToLower(); 
+                name2 = string.Concat(splitName2).ToLower();
+                // Compare the given name string
+                compareValue = string.Compare(name1, name2);
+            }
+            return compareValue;
         }
     }
 }
