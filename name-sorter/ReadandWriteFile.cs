@@ -21,8 +21,13 @@ namespace name_sorter
                 // Loop until a NULL is returned
                 while (line != null)
                 {
-                    // Add Person name to Class person Name
-                    listOfNames.Add(line);
+
+                    if (VerifyUserInput.CheckNumberOfNames(line))
+                    {
+                        // Add Person name to List 
+                        listOfNames.Add(line);
+                    } 
+
                     // Read the next line in the document
                     line = inputFile.ReadLine();
                 }

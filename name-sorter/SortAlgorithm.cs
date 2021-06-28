@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace name_sorter
 {
-    class SortAlgorithm
+    public class SortAlgorithm
     {
         private static string temp;
         
@@ -35,7 +35,7 @@ namespace name_sorter
             return listOfNames;
        }
 
-        private static int CompareNames(string name1, string name2) {
+         public static int CompareNames(string name1, string name2) {
             // Split the full name up before compairing the last name
             String[] splitName1 = name1.Split(' '); 
             String[] splitName2 = name2.Split(' ');
